@@ -27,21 +27,42 @@
     border-right:6rem solid transparent;
     border-left:6rem solid transparent;
     margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .square {
     width: 8rem;
     height: 8rem;
     background-color: yellow;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle {
     width: 9rem;
     height: 9rem;
     border-radius: 9rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .rectangle {
     width: 11rem;
     height: 6rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.puzzle-text {
+    font-size: 2rem;
+    padding: 1rem;
+    text-shadow: 0 0 5px #000000;
 }
