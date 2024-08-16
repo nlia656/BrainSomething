@@ -28,7 +28,9 @@ const HackPuzzle  = () =>{
     
 
     return (
-        <div className="card-collection">
+        <div className="background">
+            <div className="input-area">
+            <div className="card-collection">
             <PuzzleCard 
                 cardColour={dummyCardColours[0]}
                 shapeColour={dummyShapeColours[0]}
@@ -73,7 +75,11 @@ const HackPuzzle  = () =>{
                 shapeTextColour={dummyShapeTextColour[3]}
                 colourTextColour={dummyColourTextColour[3]}
             />
+            </div>
+            <input type="text" id="answerBox" placeholder="eg. blue square..."></input>
+            </div>
         </div>
+        
     )
 }
 
