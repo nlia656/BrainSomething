@@ -63,10 +63,10 @@
 .puzzle-text {
     font-size: 2rem;
     padding: 0rem;
-    text-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 3px #000000;
 }
 
 .number{
     font-size: 4rem;
-    text-shadow: 0 0 5px #000000
+    text-shadow: 0 0 3px #000000
 }
