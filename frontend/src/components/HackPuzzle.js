@@ -1,18 +1,15 @@
-import React, { useEffect, useState } from 'react';
 import './HackPuzzle.css';
 import PuzzleCard from "../components/PuzzleCard"
+import OrderCard from './OrderCards';
 
 const HackPuzzle  = () =>{
-    const SHAPES = ["circle", "triangle", "square", "rectangle"]
-    //const cards = []
-    const COLOURS = ["white", "black", "red", "blue","green", "yellow", "purple", "pink"]
     //these dummy arrays should be replaced once we have the ranomiser for these
     const dummyCardColours = ["#f700b1", "#990e99", "#372dfc", "#00bf3d"];
     const dummyShapeColours = ["#00bf3d", "white", "#fbd906", "red"];
     const dummyShapeType = ["triangle", "rectangle", "square", "circle"];
     const dummyShapeText = ["square", "triangle", "circle", "rectangle"];
     const dummyColourText = ["red", "yellow", "blue", "purple"];
-    const dummyNumber = ["1","2","3","4"];
+    const dummyNumber = ["2","4","1","3"];
     const dummyNumberColours = ["#990e99", "#fbd906", "white", "blue"];
     const dummyShapeTextColour = ["#372dfc", "red", "#f700b1", "black"];
     const dummyColourTextColour = ["red", "#372dfc", "#990e99", "white"];

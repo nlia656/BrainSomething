@@ -13,7 +13,7 @@
     width: 14rem;
     height: 14rem;
     border-radius: 1rem;
-    background-color: var(--card-bg-color, "purple");
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +68,7 @@
 
 .number{
     font-size: 4rem;
+    color: white;
     text-shadow: 0 0 3px #000000
 }
 

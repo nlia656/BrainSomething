@@ -2,14 +2,14 @@ import React from 'react'
 
 // components
 import Game1 from "../components/Game1"
-import HackPuzzle from "../components/HackPuzzle"
+import ColourPuzzle from "../components/ColourPuzzle"
 
 const Home = () => {
     return (
         <div className="home">
             <div className="workouts">
                 {/* Render the minigame component */}
-                <HackPuzzle />
+                <ColourPuzzle/>
             </div>
         </div>
     )
