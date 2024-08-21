@@ -117,19 +117,41 @@ input{
     height: auto;
 }
 
-.start-button{
-    width: 9rem;
-    height: 4rem;
-    font-size: larger;
-    background-color:grey;
-    color:beige;
-    border-color: transparent;
-    border-radius: 1rem;
+
+.end-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding-top: 5rem;
 }
 
-.start-button:hover{
-    background-color: bisque;
-    color: grey;
-    border-color: grey;
-    cursor: pointer;
+.end-text{
+    font-size: 3rem;
 }
+
+.info-text{
+    font-size: 1rem;
+}
+
+
+.restart-button{
+    display: flex;
+    background: #1aac83;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    font-size: 1rem;
+    width: 9rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .restart-button:hover {
+    background: #0e8c5f;
+    cursor: pointer;
+  }

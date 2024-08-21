@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 
 //resources
 import dinosaurIcon from "../resources/images/dinosaur.png";
+import eyeIcon from "../resources/images/eyeicon.png";
 
-// components
-
-// import Game1 from "../components/Game1"
-import ColourPuzzle from "../components/ColourPuzzle"
 
 const Home = () => {
   return (
@@ -24,7 +21,7 @@ const Home = () => {
         </div>
         <div className="card">
           <h3>Colour Puzzle</h3>
-          <img src={dinosaurIcon} alt="Dinosaur" className="card-icon" />
+          <img src={eyeIcon} alt="Eye" className="card-icon" />
           <p>A tricky observation game</p>
           <Link to="/colour-puzzle" className="play-link">
             Play

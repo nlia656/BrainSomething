@@ -129,4 +129,5 @@ header a {
 
 .play-link:hover {
   background: #0e8c5f;
+  cursor: pointer;
 }
