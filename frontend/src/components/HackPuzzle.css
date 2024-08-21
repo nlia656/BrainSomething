@@ -9,6 +9,23 @@
     padding-top: 3rem;
 }
 
+.example-layout{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width:60%;
+}
+
+.information-slides{
+    display:flex;
+    justify-content: space-around;
+    gap: 2rem;
+    height: 100%;
+    width: auto;
+}
+
 .puzzle-card{
     width: 14rem;
     height: 14rem;
@@ -93,4 +110,26 @@ input{
     padding: 0.3rem;
     margin-top: 0;
     box-sizing: border-box;
+}
+
+.example-image{
+    width: 100%;
+    height: auto;
+}
+
+.start-button{
+    width: 9rem;
+    height: 4rem;
+    font-size: larger;
+    background-color:grey;
+    color:beige;
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+.start-button:hover{
+    background-color: bisque;
+    color: grey;
+    border-color: grey;
+    cursor: pointer;
 }

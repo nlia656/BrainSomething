@@ -1,6 +1,5 @@
 import './HackPuzzle.css';
 import PuzzleCard from "../components/PuzzleCard"
-import OrderCard from './OrderCards';
 
 const HackPuzzle  = () =>{
     //these dummy arrays should be replaced once we have the ranomiser for these

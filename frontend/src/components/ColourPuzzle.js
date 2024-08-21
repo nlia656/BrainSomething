@@ -10,7 +10,7 @@ const ColourPuzzle = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowOrderCards(false);
-        },5000);
+        },3000);
 
         return () => clearTimeout(timer);
     })

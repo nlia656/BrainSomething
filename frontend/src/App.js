@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Game1 from "./components/Game1";
+import ColourPuzzle from "./components/ColourPuzzle";
+import ColourPuzzleInfo from "./components/ColourPuzzleInfo";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/game1" element={<Game1 />} />
+            <Route path="/colour-puzzle" element={<ColourPuzzleInfo/>}/>
           </Routes>
         </div>
       </BrowserRouter>

@@ -21,6 +21,14 @@ const Home = () => {
             Play Game 1
           </Link>
         </div>
+        <div className="card">
+          <h3>Colour Puzzle</h3>
+          <img src={dinosaurIcon} alt="Dinosaur" className="card-icon" />
+          <p>A tricky observation game</p>
+          <Link to="/colour-puzzle" className="play-link">
+            Play
+          </Link>
+        </div>
       </div>
     </div>
   );
