@@ -17,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/game1" element={<Game1 />} />
             <Route path="/colour-puzzle" element={<ColourPuzzleInfo/>}/>
+            <Route path="/colour-puzzle/start" element={<ColourPuzzle/>}/>
           </Routes>
         </div>
       </BrowserRouter>
