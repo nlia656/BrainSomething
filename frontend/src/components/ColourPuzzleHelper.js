@@ -1,7 +1,16 @@
 class ColourPuzzleHelper {
     constructor() {
+        this.colorMap = {
+            "white": "#ffffff",
+            "red": "#e9040d",
+            "green": "#00bf3d",
+            "blue": "#1291db",
+            "yellow": "#fbd906",
+            "pink": "#f700b1",
+            "purple": "#b017b0"
+        };
         this.colours = ["white", "black", "red", "green", "blue", "yellow", "pink", "purple"];
-        this.shades = ["#ffffff", "#e9040d", "#00bf3d", "#1291db", "#fbd906", "#f700b1", "#b017b0"]
+        this.shades = Object.values(this.colorMap);
         this.shapes = ["circle", "triangle", "square", "rectangle"];
         this.questions = ["background-colour", "shape-colour", "shape-type", "shape-text", "colour-text", "shape-text", "shape-text-colour", "colour-text-colour", "number-colour"]
     }
@@ -38,6 +47,10 @@ class ColourPuzzleHelper {
             result.push(arr[randomIndex]);
         }
         return result;
+    }
+
+    getColorName(hex) {
+        return Object.keys(this.colorMap).find(name => this.colorMap[name] === hex);
     }
 
     // timer for x number of seconds
