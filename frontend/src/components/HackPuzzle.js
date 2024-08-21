@@ -15,6 +15,8 @@ const HackPuzzle  = () =>{
     let randomNumberColours = helper.getRandomShades();
     let randomShapeTextColours = helper.getRandomShades();
     let randomColourTextColours = helper.getRandomShades();
+    let randomQuestions = helper.getRandomQuestions();
+    let questionCards = helper.getRandomOrderArray();
 
     randomCardColours = randomCardColours.map((cardColour, index) => {
         while (cardColour === randomShapeColours[index]) {
@@ -26,54 +28,57 @@ const HackPuzzle  = () =>{
     return (
         <div className="background">
             <div className="input-area">
-            <div className="card-collection">
-            <PuzzleCard 
-                cardColour={randomCardColours[0]}
-                shapeColour={randomShapeColours[0]}
-                shapeType={randomShapeTypes[0]}
-                shapeText={randomShapeText[0]}
-                colourText={randomColourText[0]}
-                number={randomNumbers[0]}
-                numberColour={randomNumberColours[0]}
-                shapeTextColour={randomShapeTextColours[0]}
-                colourTextColour={randomColourTextColours[0]}
-            />
-            <PuzzleCard 
-                cardColour={randomCardColours[1]}
-                shapeColour={randomShapeColours[1]}
-                shapeType={randomShapeTypes[1]}
-                shapeText={randomShapeText[1]}
-                colourText={randomColourText[1]}
-                number={randomNumbers[1]}
-                numberColour={randomNumberColours[1]}
-                shapeTextColour={randomShapeTextColours[1]}
-                colourTextColour={randomColourTextColours[1]}
-            />
-            <PuzzleCard 
-                cardColour={randomCardColours[2]}
-                shapeColour={randomShapeColours[2]}
-                shapeType={randomShapeTypes[2]}
-                shapeText={randomShapeText[2]}
-                colourText={randomColourText[2]}
-                number={randomNumbers[2]}
-                numberColour={randomNumberColours[2]}
-                shapeTextColour={randomShapeTextColours[2]}
-                colourTextColour={randomColourTextColours[2]}
-            />
-            <PuzzleCard 
-                cardColour={randomCardColours[3]}
-                shapeColour={randomShapeColours[3]}
-                shapeType={randomShapeTypes[3]}
-                shapeText={randomShapeText[3]}
-                colourText={randomColourText[3]}
-                number={randomNumbers[3]}
-                numberColour={randomNumberColours[3]}
-                shapeTextColour={randomShapeTextColours[3]}
-                colourTextColour={randomColourTextColours[3]}
-            />
-            </div>
-            <input type="text" id="answerBox" placeholder="eg. blue square..."></input>
-            </div>
+                <div className="card-collection">
+                    <PuzzleCard 
+                        cardColour={randomCardColours[0]}
+                        shapeColour={randomShapeColours[0]}
+                        shapeType={randomShapeTypes[0]}
+                        shapeText={randomShapeText[0]}
+                        colourText={randomColourText[0]}
+                        number={randomNumbers[0]}
+                        numberColour={randomNumberColours[0]}
+                        shapeTextColour={randomShapeTextColours[0]}
+                        colourTextColour={randomColourTextColours[0]}
+                    />
+                    <PuzzleCard 
+                        cardColour={randomCardColours[1]}
+                        shapeColour={randomShapeColours[1]}
+                        shapeType={randomShapeTypes[1]}
+                        shapeText={randomShapeText[1]}
+                        colourText={randomColourText[1]}
+                        number={randomNumbers[1]}
+                        numberColour={randomNumberColours[1]}
+                        shapeTextColour={randomShapeTextColours[1]}
+                        colourTextColour={randomColourTextColours[1]}
+                    />
+                    <PuzzleCard 
+                        cardColour={randomCardColours[2]}
+                        shapeColour={randomShapeColours[2]}
+                        shapeType={randomShapeTypes[2]}
+                        shapeText={randomShapeText[2]}
+                        colourText={randomColourText[2]}
+                        number={randomNumbers[2]}
+                        numberColour={randomNumberColours[2]}
+                        shapeTextColour={randomShapeTextColours[2]}
+                        colourTextColour={randomColourTextColours[2]}
+                    />
+                    <PuzzleCard 
+                        cardColour={randomCardColours[3]}
+                        shapeColour={randomShapeColours[3]}
+                        shapeType={randomShapeTypes[3]}
+                        shapeText={randomShapeText[3]}
+                        colourText={randomColourText[3]}
+                        number={randomNumbers[3]}
+                        numberColour={randomNumberColours[3]}
+                        shapeTextColour={randomShapeTextColours[3]}
+                        colourTextColour={randomColourTextColours[3]}
+                    />
+                    </div>
+                        <div className="qna-box">
+                            <div className="questions">{randomQuestions[0]}({questionCards[0]}) and {randomQuestions[1]}({questionCards[1]})</div>
+                            <input type="text" id="answerBox" placeholder="eg. blue square..."></input>
+                        </div>
+                    </div>
         </div>
         
     )

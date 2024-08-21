@@ -155,3 +155,17 @@ input{
     background: #0e8c5f;
     cursor: pointer;
   }
+
+  .questions{
+    font-size: 1rem;
+  }
+
+  .qna-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 1rem;
+  }
