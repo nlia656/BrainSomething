@@ -3,11 +3,15 @@ import HackPuzzle from "./HackPuzzle";
 import OrderCards from "./OrderCards";
 import React, {useState, useEffect, useRef} from 'react';
 import ColourPuzzleHelper from './ColourPuzzleHelper';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const PUZZLE_DISPLAY_TIME = 10000;
 
 const ColourPuzzle = () => {
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const initialDisplayTime = parseInt(queryParams.get('time'), 10) || 10000;
+    const PUZZLE_DISPLAY_TIME = 1000*initialDisplayTime;
+    
     const [showOrderCards, setShowOrderCards] = useState(true);
     const [timeOver, setTimeOver] = useState(false);
     const [puzzleSolved, setPuzzleSolved] = useState(false);
@@ -36,7 +40,7 @@ const ColourPuzzle = () => {
         const helper = new ColourPuzzleHelper();
         const orderArray = helper.getRandomOrderArray();
         setRandomOrderArray(orderArray);
-        // wait 3 seconds, then show the puzzle and start the 5-second timer
+        // wait 3 seconds, then show the puzzle and start the timer
         const hideOrderCardsTimer = setTimeout(() => {
             setShowOrderCards(false);
 
@@ -56,7 +60,7 @@ const ColourPuzzle = () => {
                 });
             }, 1000);
 
-        }, 1000);
+        }, 3000);
 
         // clean up timers when the component unmounts
         return () => {

@@ -6,12 +6,12 @@ import exampleOrder from "../resources/images/exampleorder.png";
 import { Link } from "react-router-dom";
 
 const ColourPuzzleInfo = () => {
-    const [selectedTime, setSelectedTime] = useState(10);
+    const [selectedTime, setSelectedTime] = useState(10);// default is 10 sec
 
     const handleTimeSelect = (time) => {
         setSelectedTime(time);
     };
-
+    //url will end with colour-puzzle/start?time=[however long they choose]
     const link = `start?time=${encodeURIComponent(selectedTime)}`;
 
     return (
@@ -30,7 +30,7 @@ const ColourPuzzleInfo = () => {
                     Play
                 </Link>
                 <div className="time-selector">
-                    <label>Select Puzzle Display Time:</label>
+                    <div>Select Puzzle Display Time:</div>
                     <div className="time-buttons">
                         <button
                             className={selectedTime === 5 ? "selected" : ""}
