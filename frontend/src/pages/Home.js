@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // resources
 import dinosaurIcon from "../resources/images/dinosaur.png";
 import eyeIcon from "../resources/images/eyeicon.png";
-import reactionIcon from "../resources/images/reaction.png"; // Add an icon for the reaction game
+import reactionIcon from "../resources/images/reactionClock.png"; // Add an icon for the reaction game
 
 // components
 const Home = () => {
