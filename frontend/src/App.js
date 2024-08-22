@@ -19,7 +19,7 @@ function App() {
         <div className="pages">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/game1" element={<Game1 />} />
+            <Route path="/dino-jump" element={<Game1 />} />
             <Route path="/colour-puzzle" element={<ColourPuzzleInfo/>}/>
             <Route path="/colour-puzzle/start" element={<ColourPuzzle/>}/>
             <Route path="/reaction-game" element={<Reaction />} />

@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import dinosaurIcon from "../resources/images/dinosaur.png";
 import eyeIcon from "../resources/images/eyeicon.png";
 import reactionIcon from "../resources/images/reaction.png"; // Add an icon for the reaction game
-import ColourPuzzle from "../components/ColourPuzzle"
-import Game1 from "../components/Game1";
 
 // components
 const Home = () => {
@@ -15,11 +13,11 @@ const Home = () => {
         <div className="cards-container">
           {/* Card for Game 1 */}
           <div className="card">
-            <h3>Game 1</h3>
+            <h3>Dino Jump</h3>
             <img src={dinosaurIcon} alt="Dinosaur" className="card-icon" />
             <p>A fun jumping game</p>
-            <Link to="/game1" className="play-link">
-              Play Game 1
+            <Link to="/dino-jump" className="play-link">
+              Play Dino Jump
             </Link>
           </div>
 
