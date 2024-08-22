@@ -32,15 +32,15 @@ const Home = () => {
               Play Reaction Game
             </Link>
           </div>
-        </div>
           {/* Card for colour puzzle */}
         <div className="card">
           <h3>Colour Puzzle</h3>
           <img src={eyeIcon} alt="Eye" className="card-icon" />
           <p>A tricky observation game</p>
           <Link to="/colour-puzzle" className="play-link">
-            Play
+            Play Colour Puzzle
           </Link>
+        </div>
         </div>
       </div>
   );
